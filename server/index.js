@@ -14,7 +14,11 @@ server.listen(3001, () => {
 
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000", "https://quick-chat-7a9b.onrender.com"],
+    origin: [
+      "http://localhost:3000",
+      "https://quick-chat-7a9b.onrender.com",
+      "https://quick-chat-gamma.vercel.app",
+    ],
     methods: ["GET", "POST"],
     maxHttpBufferSize: 1e7,
   },
