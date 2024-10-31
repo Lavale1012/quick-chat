@@ -4,7 +4,7 @@ import Chat from "./components/Chat";
 import DarkModeToggle from "./components/DarkModeToggle";
 import LogIn from "./components/LogIn";
 
-const socket = io.connect("http://localhost:3001");
+const socket = io.connect("https://quick-chat-7a9b.onrender.com");
 
 function App() {
   const [showChat, setShowChat] = useState(false);
