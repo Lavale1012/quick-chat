@@ -19,7 +19,7 @@ function Chat({ socket, username, room, newRoom }) {
         const options = {
           maxSizeMB: 1, // Reduce image size to 1 MB
           maxWidthOrHeight: 1024, // Scale image dimensions to 1024px
-          useWebWorker: true, // Use WebWorker for performance
+          useWebWorker: true,
         };
         const compressedFile = await imageCompression(file, options);
         const reader = new FileReader();
